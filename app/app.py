@@ -23,5 +23,4 @@ def set_adult(user: AgedUser):
 @app.post('/feedback')
 def post_feedback(feedback: Feedback):
     feedbacks.append(feedback)
-    return {'message': f"Feedback received. Thank you, {feedback.name}."}
-
+    return {"message": f"Спасибо, {feedback.name}! Ваш отзыв сохранён."}
